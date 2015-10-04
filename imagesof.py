@@ -203,7 +203,7 @@ def make_post(r, originalsubmission, subreddit):
             print("API error. Skipping.")
             break
         
-def praw_oauth_login():
+def praw_oauth_login(r):
     
     print('authorizing...')
     
@@ -224,7 +224,7 @@ def main():
     print("Logging in...")
     r = praw.Reddit('ImagesOf v2.1 /u/amici_ursi, /u/captainmeta4, /u/noeatnosleep')
     
-    praw_oauth_login()
+    praw_oauth_login(r)
 
     while True:
         try:
