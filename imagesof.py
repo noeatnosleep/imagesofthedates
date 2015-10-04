@@ -221,8 +221,7 @@ def make_post(r, originalsubmission, subreddit):
 def main():
     print("Logging in...")
     r = praw.Reddit('ImagesOf v2.05 /u/amici_ursi')
-    import os
-    app_secret = os.environ.get("secret")
+    o = OAuth2Util.OAuth2Util(r, print_log=True)
 
     while True:
         try:
