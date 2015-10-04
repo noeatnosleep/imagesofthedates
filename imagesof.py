@@ -180,19 +180,6 @@ def search_for_places(r, o):
             if 'imgur' not in submission.url and 'deviantart' not in submission.url:
                 continue
             make_post(r, submission, 'imagesofthe2010s')
-#2020s
-        elif re.search("\\b202[0-9]\\b", title, flags=re.IGNORECASE) != None:
-            if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
-                continue
-            if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
-                continue
-            if str(submission.subreddit).lower() == 'imagesofthe2020s':
-                continue
-            if submission.over_18:  # skip if nsfw
-                continue
-            if 'imgur' not in submission.url and 'deviantart' not in submission.url:
-                continue
-            make_post(r, submission, 'imagesofthe2020s')
 
 
 def make_post(r, originalsubmission, subreddit):
