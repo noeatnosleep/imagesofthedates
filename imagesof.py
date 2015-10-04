@@ -4,11 +4,10 @@ import os
 import re
 
 
-def search_for_places(r, o):
+def search_for_places(r):
     submission_stream = praw.helpers.submission_stream(r, 'all')
     print("searching for posts...")
     for submission in submission_stream:
-        o.refresh()
         title = submission.title
 #1800s
         if re.search("\\b18[00-99]\\b", title, flags=re.IGNORECASE) != None:
