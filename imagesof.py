@@ -1,6 +1,6 @@
 import time
 import praw
-import OAuth2Util
+import os
 import re
 
 
@@ -216,12 +216,29 @@ def make_post(r, originalsubmission, subreddit):
         except praw.errors.APIException as e:
             print("API error. Skipping.")
             break
+        
+def praw_oauth_login():
+    
+    print('authorizing...')
+    
+    #Load keys from heroku config vars
+    client_id = os.environ.get("client_id")
+    client_secret = os.environ.get("client_secret")
+    redirect_uri = "http://127.0.0.1:65010/authorize_callback"
+    refresh_token=os.environ.get("refresh_token")
+    
+    #Set the oauth app info and get authorization
+    r.set_oauth_app_info(client_id, client_secret, redirect_uri)
+    r.refresh_access_information(refresh_token)
+    
+    print('...done')
 
 
 def main():
     print("Logging in...")
     r = praw.Reddit('ImagesOf v2.05 /u/amici_ursi')
-    o = OAuth2Util.OAuth2Util(r, print_log=True)
+    
+    praw_oauth_login()
 
     while True:
         try:
