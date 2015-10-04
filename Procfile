@@ -1,1 +1,1 @@
-worker: python images_of_bot.py
+worker: python imagesof.py
