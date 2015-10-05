@@ -228,7 +228,7 @@ def main():
 
     while True:
         try:
-            search_for_places(r, o)
+            search_for_places(r)
         except praw.errors.HTTPException:
             print("Reddit is down. Sleeping...")
             time.sleep(360)
