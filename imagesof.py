@@ -2,6 +2,8 @@ import time
 import praw
 import os
 import re
+import Users
+import Subreddits
 
 
 def search_for_places(r):
@@ -13,7 +15,11 @@ def search_for_places(r):
         if re.search("\\b18[00-99]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
+            if str(submission.author).lower() in Users.users:
+                continue
+            if str(submission.subreddit).lower() in Subreddits.subreddits:
+                continue
+            if str(submission.author).lower() == 'blacklisteduser':
                 continue
             if str(submission.subreddit).lower() == 'imagesofthe1800s':
                 continue
@@ -26,7 +32,11 @@ def search_for_places(r):
         elif re.search("\\b190[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
+            if str(submission.author).lower() in Users.users:
+                continue
+            if str(submission.subreddit).lower() in Subreddits.subreddits:
+                continue
+            if str(submission.author).lower() == 'blacklisteduser':
                 continue
             if str(submission.subreddit).lower() == 'imagesofthe1900s':
                 continue
@@ -39,7 +49,11 @@ def search_for_places(r):
         elif re.search("\\b191[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
+            if str(submission.author).lower() in Users.users:
+                continue
+            if str(submission.subreddit).lower() in Subreddits.subreddits:
+                continue
+            if str(submission.author).lower() == 'blacklisteduser':
                 continue
             if str(submission.subreddit).lower() == 'imagesofthe1910s':
                 continue
@@ -52,7 +66,11 @@ def search_for_places(r):
         elif re.search("\\b192[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
+            if str(submission.author).lower() in Users.users:
+                continue
+            if str(submission.subreddit).lower() in Subreddits.subreddits:
+                continue
+            if str(submission.author).lower() == 'blacklisteduser':
                 continue
             if str(submission.subreddit).lower() == 'imagesofthe1920s':
                 continue
@@ -65,7 +83,11 @@ def search_for_places(r):
         elif re.search("\\b193[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
+            if str(submission.author).lower() in Users.users:
+                continue
+            if str(submission.subreddit).lower() in Subreddits.subreddits:
+                continue
+            if str(submission.author).lower() == 'blacklisteduser':
                 continue
             if str(submission.subreddit).lower() == 'imagesofthe1930s':
                 continue
@@ -78,7 +100,11 @@ def search_for_places(r):
         elif re.search("\\b194[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
+            if str(submission.author).lower() in Users.users:
+                continue
+            if str(submission.subreddit).lower() in Subreddits.subreddits:
+                continue
+            if str(submission.author).lower() == 'blacklisteduser':
                 continue
             if str(submission.subreddit).lower() == 'imagesofthe1940s':
                 continue
@@ -92,7 +118,11 @@ def search_for_places(r):
         elif re.search("\\b195[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
+            if str(submission.author).lower() in Users.users:
+                continue
+            if str(submission.subreddit).lower() in Subreddits.subreddits:
+                continue
+            if str(submission.author).lower() == 'blacklisteduser':
                 continue
             if str(submission.subreddit).lower() == 'imagesofthe1950s':
                 continue
@@ -105,7 +135,11 @@ def search_for_places(r):
         elif re.search("\\b196[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
+            if str(submission.author).lower() in Users.users:
+                continue
+            if str(submission.subreddit).lower() in Subreddits.subreddits:
+                continue
+            if str(submission.author).lower() == 'blacklisteduser':
                 continue
             if str(submission.subreddit).lower() == 'imagesofthe1960s':
                 continue
@@ -118,7 +152,11 @@ def search_for_places(r):
         elif re.search("\\b197[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
+            if str(submission.author).lower() in Users.users:
+                continue
+            if str(submission.subreddit).lower() in Subreddits.subreddits:
+                continue
+            if str(submission.author).lower() == 'blacklisteduser':
                 continue
             if str(submission.subreddit).lower() == 'imagesofthe1970s':
                 continue
@@ -131,7 +169,11 @@ def search_for_places(r):
         elif re.search("\\b198[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
+            if str(submission.author).lower() in Users.users:
+                continue
+            if str(submission.subreddit).lower() in Subreddits.subreddits:
+                continue
+            if str(submission.author).lower() == 'blacklisteduser':
                 continue
             if str(submission.subreddit).lower() == 'imagesofthe1980s':
                 continue
@@ -144,7 +186,11 @@ def search_for_places(r):
         elif re.search("\\b199[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
+            if str(submission.author).lower() in Users.users:
+                continue
+            if str(submission.subreddit).lower() in Subreddits.subreddits:
+                continue
+            if str(submission.author).lower() == 'blacklisteduser':
                 continue
             if str(submission.subreddit).lower() == 'imagesofthe1990s':
                 continue
@@ -157,7 +203,11 @@ def search_for_places(r):
         elif re.search("\\b200[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
+            if str(submission.author).lower() in Users.users:
+                continue
+            if str(submission.subreddit).lower() in Subreddits.subreddits:
+                continue
+            if str(submission.author).lower() == 'blacklisteduser':
                 continue
             if str(submission.subreddit).lower() == 'imagesofthe2000s':
                 continue
@@ -170,7 +220,11 @@ def search_for_places(r):
         elif re.search("\\b201[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
+            if str(submission.author).lower() in Users.users:
+                continue
+            if str(submission.subreddit).lower() in Subreddits.subreddits:
+                continue
+            if str(submission.author).lower() == 'blacklisteduser':
                 continue
             if str(submission.subreddit).lower() == 'imagesofthe2010s' or str(submission.subreddit).lower() == 'cutekorean':
                 continue
