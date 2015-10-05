@@ -172,7 +172,7 @@ def search_for_places(r):
                 continue
             if str(submission.author).lower() == 'rpbot' or str(submission.author).lower() == 'amici_ursi' or str(submission.author).lower() == 'noeatnosleep':
                 continue
-            if str(submission.subreddit).lower() == 'imagesofthe2010s':
+            if str(submission.subreddit).lower() == 'imagesofthe2010s' or if str(submission.subreddit).lower() == 'cutekorean':
                 continue
             if submission.over_18:  # skip if nsfw
                 continue
