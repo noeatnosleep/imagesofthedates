@@ -12,7 +12,7 @@ def search_for_places(r):
     for submission in submission_stream:
         title = submission.title
 #1800s
-        if re.search("\\b18[00-99]\\b", title, flags=re.IGNORECASE) != None:
+        if re.search("\\b18[0-9][0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.author).lower() in Users.users:
