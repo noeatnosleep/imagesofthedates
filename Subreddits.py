@@ -1,5 +1,5 @@
 # Subreddit blacklist. use lowercase.
 subreddits = [
-    'exampleblacklistedsubreddit',
+    'diplomacy',
     'wallpapers',
     'wallpaper']
