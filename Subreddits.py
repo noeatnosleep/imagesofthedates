@@ -2,4 +2,4 @@
 subreddits = [
     'exampleblacklistedsubreddit',
     'anothersubreddit',
-    'andanother']
+    'wallpaper']
