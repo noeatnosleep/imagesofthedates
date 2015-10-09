@@ -15,6 +15,8 @@ def search_for_places(r):
         if re.search("\\b18[0-9][0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
+            if str(submission.title).lower() in Titles.titles:
+                continue
             if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
