@@ -4,6 +4,7 @@ import os
 import re
 import Users
 import Subreddits
+import Titles
 
 
 def search_for_places(r):
