@@ -5,6 +5,7 @@ import re
 import Users
 import Subreddits
 import Titles
+import Domains
 
 
 def search_for_places(r):
@@ -17,6 +18,8 @@ def search_for_places(r):
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
+                continue
+            if str(submission.domain).lower() in Domains.domains:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -37,6 +40,8 @@ def search_for_places(r):
                 continue
             if str(submission.title).lower() in Titles.titles:
                 continue
+            if str(submission.domain).lower() in Domains.domains:
+                continue
             if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
@@ -55,6 +60,8 @@ def search_for_places(r):
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
+                continue
+            if str(submission.domain).lower() in Domains.domains:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -75,6 +82,8 @@ def search_for_places(r):
                 continue
             if str(submission.title).lower() in Titles.titles:
                 continue
+            if str(submission.domain).lower() in Domains.domains:
+                continue
             if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
@@ -94,6 +103,8 @@ def search_for_places(r):
                 continue
             if str(submission.title).lower() in Titles.titles:
                 continue
+            if str(submission.domain).lower() in Domains.domains:
+                continue
             if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
@@ -112,6 +123,8 @@ def search_for_places(r):
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
+                continue
+            if str(submission.domain).lower() in Domains.domains:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -133,6 +146,8 @@ def search_for_places(r):
                 continue
             if str(submission.title).lower() in Titles.titles:
                 continue
+            if str(submission.domain).lower() in Domains.domains:
+                continue
             if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
@@ -151,6 +166,8 @@ def search_for_places(r):
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
+                continue
+            if str(submission.domain).lower() in Domains.domains:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -171,6 +188,8 @@ def search_for_places(r):
                 continue
             if str(submission.title).lower() in Titles.titles:
                 continue
+            if str(submission.domain).lower() in Domains.domains:
+                continue
             if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
@@ -189,6 +208,8 @@ def search_for_places(r):
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
+                continue
+            if str(submission.domain).lower() in Domains.domains:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -209,6 +230,8 @@ def search_for_places(r):
                 continue
             if str(submission.title).lower() in Titles.titles:
                 continue
+            if str(submission.domain).lower() in Domains.domains:
+                continue
             if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
@@ -228,6 +251,8 @@ def search_for_places(r):
                 continue
             if str(submission.title).lower() in Titles.titles:
                 continue
+            if str(submission.domain).lower() in Domains.domains:
+                continue
             if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
@@ -246,6 +271,8 @@ def search_for_places(r):
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
+                continue
+            if str(submission.domain).lower() in Domains.domains:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
