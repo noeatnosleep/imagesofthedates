@@ -74,7 +74,7 @@ def search_for_places(r):
                 continue
             if str(submission.title).lower() in Titles.titles:
                 continue
-			if str(submission.author).lower() in Users.users:
+            if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
