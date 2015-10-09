@@ -34,6 +34,8 @@ def search_for_places(r):
         elif re.search("\\b190[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
+            if str(submission.title).lower() in Titles.titles:
+                continue
             if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
@@ -50,6 +52,8 @@ def search_for_places(r):
 #1910s
         elif re.search("\\b191[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
+                continue
+            if str(submission.title).lower() in Titles.titles:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -68,7 +72,9 @@ def search_for_places(r):
         elif re.search("\\b192[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.author).lower() in Users.users:
+            if str(submission.title).lower() in Titles.titles:
+                continue
+			if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
@@ -84,6 +90,8 @@ def search_for_places(r):
 #1930s
         elif re.search("\\b193[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
+                continue
+            if str(submission.title).lower() in Titles.titles:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -101,6 +109,8 @@ def search_for_places(r):
 #1940s
         elif re.search("\\b194[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
+                continue
+            if str(submission.title).lower() in Titles.titles:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -120,6 +130,8 @@ def search_for_places(r):
         elif re.search("\\b195[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
+            if str(submission.title).lower() in Titles.titles:
+                continue
             if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
@@ -136,6 +148,8 @@ def search_for_places(r):
 #1960s
         elif re.search("\\b196[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
+                continue
+            if str(submission.title).lower() in Titles.titles:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -154,6 +168,8 @@ def search_for_places(r):
         elif re.search("\\b197[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
+            if str(submission.title).lower() in Titles.titles:
+                continue
             if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
@@ -170,6 +186,8 @@ def search_for_places(r):
 #1980s
         elif re.search("\\b198[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
+                continue
+            if str(submission.title).lower() in Titles.titles:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -188,6 +206,8 @@ def search_for_places(r):
         elif re.search("\\b199[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
+            if str(submission.title).lower() in Titles.titles:
+                continue
             if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
@@ -205,6 +225,8 @@ def search_for_places(r):
         elif re.search("\\b200[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
+            if str(submission.title).lower() in Titles.titles:
+                continue
             if str(submission.author).lower() in Users.users:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
@@ -221,6 +243,8 @@ def search_for_places(r):
 #2010s
         elif re.search("\\b201[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
+                continue
+            if str(submission.title).lower() in Titles.titles:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
