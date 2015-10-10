@@ -2,4 +2,5 @@
 subreddits = [
     'diplomacy',
     'wallpapers',
+    'circlejerk',
     'wallpaper']
