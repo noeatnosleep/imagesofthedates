@@ -292,9 +292,9 @@ def search_for_places(r):
 def make_post(r, originalsubmission, subreddit):
     title = "\"{}\" by {} in {}".format(originalsubmission.title, originalsubmission.author,
                                               originalsubmission.subreddit)
-    comment = '[Original post]({}) in /r/{} by /u/{}'.format(originalsubmission.permalink,
-                                                    originalsubmission.subreddit,
-                                                    originalsubmission.author)
+    comment = '[Original post]({}) by /u/{} in /r/{} '.format(originalsubmission.permalink,
+                                                    originalsubmission.author,
+                                                    originalsubmission.subreddit)
     print("Making post in {}...".format(subreddit))
     while True:
         try:
