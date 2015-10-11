@@ -35,7 +35,7 @@ def search_for_places(r):
                 continue
             make_post(r, submission, 'imagesofthe1800s')
 #1900s
-        elif re.search("\\b190[0-9]\\b", title, flags=re.IGNORECASE) != None:
+        if re.search("\\b190[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
@@ -56,7 +56,7 @@ def search_for_places(r):
                 continue
             make_post(r, submission, 'imagesofthe1900s')
 #1910s
-        elif re.search("\\b191[0-9]\\b", title, flags=re.IGNORECASE) != None:
+        if re.search("\\b191[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
@@ -77,7 +77,7 @@ def search_for_places(r):
                 continue
             make_post(r, submission, 'imagesofthe1910s')
 #1920s
-        elif re.search("\\b192[0-9]\\b", title, flags=re.IGNORECASE) != None:
+        if re.search("\\b192[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
@@ -98,7 +98,7 @@ def search_for_places(r):
                 continue
             make_post(r, submission, 'imagesofthe1920s')
 #1930s
-        elif re.search("\\b193[0-9]\\b", title, flags=re.IGNORECASE) != None:
+        if re.search("\\b193[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
@@ -119,7 +119,7 @@ def search_for_places(r):
                 continue
             make_post(r, submission, 'imagesofthe1930s')
 #1940s
-        elif re.search("\\b194[0-9]\\b", title, flags=re.IGNORECASE) != None:
+        if re.search("\\b194[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
@@ -141,7 +141,7 @@ def search_for_places(r):
             make_post(r, submission, 'imagesofthe1940s')
 
 #1950s
-        elif re.search("\\b195[0-9]\\b", title, flags=re.IGNORECASE) != None:
+        if re.search("\\b195[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
@@ -162,7 +162,7 @@ def search_for_places(r):
                 continue
             make_post(r, submission, 'imagesofthe1950s')
 #1960s
-        elif re.search("\\b196[0-9]\\b", title, flags=re.IGNORECASE) != None:
+        if re.search("\\b196[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
@@ -183,7 +183,7 @@ def search_for_places(r):
                 continue
             make_post(r, submission, 'imagesofthe1960s')
 #1970s
-        elif re.search("\\b197[0-9]\\b", title, flags=re.IGNORECASE) != None:
+        if re.search("\\b197[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
@@ -204,7 +204,7 @@ def search_for_places(r):
                 continue
             make_post(r, submission, 'imagesofthe1970s')
 #1980s
-        elif re.search("\\b198[0-9]\\b", title, flags=re.IGNORECASE) != None:
+        if re.search("\\b198[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
@@ -225,7 +225,7 @@ def search_for_places(r):
                 continue
             make_post(r, submission, 'imagesofthe1980s')
 #1990s
-        elif re.search("\\b199[0-9]\\b", title, flags=re.IGNORECASE) != None:
+        if re.search("\\b199[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
@@ -246,7 +246,7 @@ def search_for_places(r):
                 continue
             make_post(r, submission, 'imagesofthe1990s')
 #2000s
-        elif re.search("\\b200[0-9]\\b", title, flags=re.IGNORECASE) != None:
+        if re.search("\\b200[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
@@ -267,7 +267,7 @@ def search_for_places(r):
                 continue
             make_post(r, submission, 'imagesofthe2000s')
 #2010s
-        elif re.search("\\b201[0-9]\\b", title, flags=re.IGNORECASE) != None:
+        if re.search("\\b201[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.title).lower() in Titles.titles:
