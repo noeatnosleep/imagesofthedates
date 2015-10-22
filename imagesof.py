@@ -4,7 +4,6 @@ import os
 import re
 import Users
 import Subreddits
-import Titles
 import Domains
 
 
@@ -17,9 +16,7 @@ def search_for_places(r):
         if re.search("\\b18[0-9][0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.title).lower() in Titles.titles:
-                continue
-            if str(submission.domain).lower() in Domains.domains:
+            if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -31,16 +28,12 @@ def search_for_places(r):
                 continue
             if submission.over_18:  # skip if nsfw
                 continue
-            if 'imgur' not in submission.url and 'deviantart' not in submission.url:
-                continue
             make_post(r, submission, 'imagesofthe1800s')
 #1900s
         if re.search("\\b190[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.title).lower() in Titles.titles:
-                continue
-            if str(submission.domain).lower() in Domains.domains:
+            if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -52,16 +45,12 @@ def search_for_places(r):
                 continue
             if submission.over_18:  # skip if nsfw
                 continue
-            if 'imgur' not in submission.url and 'deviantart' not in submission.url:
-                continue
             make_post(r, submission, 'imagesofthe1900s')
 #1910s
         if re.search("\\b191[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.title).lower() in Titles.titles:
-                continue
-            if str(submission.domain).lower() in Domains.domains:
+            if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -73,16 +62,12 @@ def search_for_places(r):
                 continue
             if submission.over_18:  # skip if nsfw
                 continue
-            if 'imgur' not in submission.url and 'deviantart' not in submission.url:
-                continue
             make_post(r, submission, 'imagesofthe1910s')
 #1920s
         if re.search("\\b192[0-9]\\b", title, flags=re.IGNORECASE) != None:
-            if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
+            if re.search("(\\b192[0-9].?x|x.?192[0-9]\\b)", title, flags=re.IGNORECASE) != None: #don't post if a variation of "1920 x" or "x 1920"
                 continue
-            if str(submission.title).lower() in Titles.titles:
-                continue
-            if str(submission.domain).lower() in Domains.domains:
+            if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -94,16 +79,12 @@ def search_for_places(r):
                 continue
             if submission.over_18:  # skip if nsfw
                 continue
-            if 'imgur' not in submission.url and 'deviantart' not in submission.url:
-                continue
             make_post(r, submission, 'imagesofthe1920s')
 #1930s
         if re.search("\\b193[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.title).lower() in Titles.titles:
-                continue
-            if str(submission.domain).lower() in Domains.domains:
+            if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -115,16 +96,12 @@ def search_for_places(r):
                 continue
             if submission.over_18:  # skip if nsfw
                 continue
-            if 'imgur' not in submission.url and 'deviantart' not in submission.url:
-                continue
             make_post(r, submission, 'imagesofthe1930s')
 #1940s
         if re.search("\\b194[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.title).lower() in Titles.titles:
-                continue
-            if str(submission.domain).lower() in Domains.domains:
+            if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -136,17 +113,13 @@ def search_for_places(r):
                 continue
             if submission.over_18:  # skip if nsfw
                 continue
-            if 'imgur' not in submission.url and 'deviantart' not in submission.url:
-                continue
             make_post(r, submission, 'imagesofthe1940s')
-
 #1950s
         if re.search("\\b195[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.title).lower() in Titles.titles:
-                continue
-            if str(submission.domain).lower() in Domains.domains:
+ 
+            if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -158,16 +131,12 @@ def search_for_places(r):
                 continue
             if submission.over_18:  # skip if nsfw
                 continue
-            if 'imgur' not in submission.url and 'deviantart' not in submission.url:
-                continue
             make_post(r, submission, 'imagesofthe1950s')
 #1960s
         if re.search("\\b196[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.title).lower() in Titles.titles:
-                continue
-            if str(submission.domain).lower() in Domains.domains:
+            if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -179,16 +148,12 @@ def search_for_places(r):
                 continue
             if submission.over_18:  # skip if nsfw
                 continue
-            if 'imgur' not in submission.url and 'deviantart' not in submission.url:
-                continue
             make_post(r, submission, 'imagesofthe1960s')
 #1970s
         if re.search("\\b197[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.title).lower() in Titles.titles:
-                continue
-            if str(submission.domain).lower() in Domains.domains:
+            if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -200,16 +165,12 @@ def search_for_places(r):
                 continue
             if submission.over_18:  # skip if nsfw
                 continue
-            if 'imgur' not in submission.url and 'deviantart' not in submission.url:
-                continue
             make_post(r, submission, 'imagesofthe1970s')
 #1980s
         if re.search("\\b198[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.title).lower() in Titles.titles:
-                continue
-            if str(submission.domain).lower() in Domains.domains:
+            if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -221,16 +182,12 @@ def search_for_places(r):
                 continue
             if submission.over_18:  # skip if nsfw
                 continue
-            if 'imgur' not in submission.url and 'deviantart' not in submission.url:
-                continue
             make_post(r, submission, 'imagesofthe1980s')
 #1990s
         if re.search("\\b199[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.title).lower() in Titles.titles:
-                continue
-            if str(submission.domain).lower() in Domains.domains:
+            if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -242,16 +199,12 @@ def search_for_places(r):
                 continue
             if submission.over_18:  # skip if nsfw
                 continue
-            if 'imgur' not in submission.url and 'deviantart' not in submission.url:
-                continue
             make_post(r, submission, 'imagesofthe1990s')
 #2000s
         if re.search("\\b200[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.title).lower() in Titles.titles:
-                continue
-            if str(submission.domain).lower() in Domains.domains:
+            if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -263,16 +216,12 @@ def search_for_places(r):
                 continue
             if submission.over_18:  # skip if nsfw
                 continue
-            if 'imgur' not in submission.url and 'deviantart' not in submission.url:
-                continue
             make_post(r, submission, 'imagesofthe2000s')
 #2010s
         if re.search("\\b201[0-9]\\b", title, flags=re.IGNORECASE) != None:
             if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
                 continue
-            if str(submission.title).lower() in Titles.titles:
-                continue
-            if str(submission.domain).lower() in Domains.domains:
+            if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
             if str(submission.author).lower() in Users.users:
                 continue
@@ -283,8 +232,6 @@ def search_for_places(r):
             if str(submission.subreddit).lower() == 'imagesofthe2010s' or str(submission.subreddit).lower() == 'cutekorean':
                 continue
             if submission.over_18:  # skip if nsfw
-                continue
-            if 'imgur' not in submission.url and 'deviantart' not in submission.url:
                 continue
             make_post(r, submission, 'imagesofthe2010s')
 
