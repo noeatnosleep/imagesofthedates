@@ -1,5 +1,29 @@
-# domains blacklist. use lowercase.
-domains = [
-    'img.imgurphoto.com',
-	'domain',
-    'domain']
+# Domains whitelist. Use lowercase
+domains = (
+    '500px.com',
+    'abload.de',
+    'deviantart.com',
+    'deviantart.net',
+    'fav.me',
+    'fbcdn.net',
+    'flickr.com',
+    'forgifs.com',
+    'gfycat.com',
+    'gifsoup.com',
+    'gyazo.com',
+    'imageshack.us',
+    'imgclean.com',
+    'imgur.com',
+    'instagr.am',
+    'instagram.com',
+    'mediacru.sh',
+    'media.tumblr.com',
+    'min.us',
+    'minus.com',
+    'myimghost.com',
+    'photobucket.com',
+    'picsarus.com',
+    'puu.sh',
+    'staticflickr.com',
+    'tinypic.com',
+    'twitpic.com')
