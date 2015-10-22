@@ -5,4 +5,5 @@ subreddits = [
     'wallpapers',
     'circlejerk',
     'deepdreampics', 
-    'wallpaper']
+    'wallpaper',
+    'removalbot']
