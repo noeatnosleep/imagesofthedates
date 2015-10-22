@@ -14,7 +14,7 @@ def search_for_places(r):
         title = submission.title
 #1800s
         if re.search("\\b18[0-9][0-9]\\b", title, flags=re.IGNORECASE) != None:
-            if re.search("(\\bbadkeyword\\b)", title, flags=re.IGNORECASE) != None:
+            if re.search("(\\b18[0-9][0-9].?(x|\*|-)|(x|\*|-).?18[0-9][0-9]\\b)", title, flags=re.IGNORECASE) != None:
                 continue
             if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
