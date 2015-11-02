@@ -4,4 +4,5 @@ users = [
     'iamseiko',
     'rpbot',
     'removalbot',
-    'removalbot_poster']
+    'removalbot_poster',
+    'xfile345']
