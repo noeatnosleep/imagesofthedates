@@ -4,6 +4,8 @@ users = [
     'iamseiko',
     'rpbot',
     'removalbot',
-    'EVOSexyBeast',
+    'evosexybeast',
     'removalbot_poster',
-    'xfile345']
+    'xfile345',
+    'kritiosman',
+    'doesnthatefatties']
