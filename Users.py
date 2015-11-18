@@ -8,4 +8,5 @@ users = [
     'removalbot_poster',
     'xfile345',
     'kritiosman',
-    'doesnthatefatties']
+    'doesnthatefatties',
+    'puripurihakase']
