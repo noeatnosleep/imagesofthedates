@@ -7,5 +7,5 @@ subreddits = [
     'deepdreampics', 
     'wallpaper',
     'removalbot',
-    'transpassing, 
+    'transpassing', 
     'shittyadviceanimals']
