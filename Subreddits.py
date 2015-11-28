@@ -8,5 +8,6 @@ subreddits = [
     'wallpaper',
     'removalbot',
     'transpassing', 
-    'kerbalspaceprogram', 
+    'kerbalspaceprogram',
+    'realsolarsystem',  
     'shittyadviceanimals']
