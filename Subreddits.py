@@ -10,4 +10,5 @@ subreddits = [
     'transpassing', 
     'kerbalspaceprogram',
     'realsolarsystem',  
-    'shittyadviceanimals']
+    'shittyadviceanimals,
+    'wsgy']
