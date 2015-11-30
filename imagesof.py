@@ -58,7 +58,7 @@ def search_for_places(r):
                 continue
             if str(submission.author).lower() == 'blacklisteduser':
                 continue
-            if str(submission.subreddit).lower() == 'imagesofthe1910s':
+            if str(submission.subreddit).lower() in ('imagesofthe1910s', '1911fans'):
                 continue
             if submission.over_18:  # skip if nsfw
                 continue
