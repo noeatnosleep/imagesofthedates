@@ -11,4 +11,5 @@ subreddits = [
     'kerbalspaceprogram',
     'realsolarsystem',  
     'shittyadviceanimals',
+    'imaginarymaps',
     'wsgy']
