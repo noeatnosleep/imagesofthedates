@@ -12,4 +12,5 @@ subreddits = [
     'realsolarsystem',  
     'shittyadviceanimals',
     'imaginarymaps',
+    'instahotties2',
     'wsgy']
