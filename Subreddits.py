@@ -13,4 +13,9 @@ subreddits = [
     'shittyadviceanimals',
     'imaginarymaps',
     'instahotties2',
+    'eternityclub',
+    'politicsmod',
+    'gadgetsmod',
+    'modtalk',
+    'defaultmods',
     'wsgy']
