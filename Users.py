@@ -10,4 +10,5 @@ users = [
     'kritiosman',
     'kryso',
     'doesnthatefatties',
-    'puripurihakase']
+    'puripurihakase',
+    'justblue']
