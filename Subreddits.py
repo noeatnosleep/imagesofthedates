@@ -14,6 +14,7 @@ subreddits = [
     'imaginarymaps',
     'instahotties2',
     'eternityclub',
+    'knowledgebombshell',
     'politicsmod',
     'gadgetsmod',
     'modtalk',
