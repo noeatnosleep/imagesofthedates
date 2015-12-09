@@ -9,6 +9,7 @@ users = [
     'xfile345',
     'kritiosman',
     'kryso',
+    'KnowledgeBombShell',
     'doesnthatefatties',
     'puripurihakase',
     'justblue']
