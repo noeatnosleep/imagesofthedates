@@ -19,4 +19,5 @@ subreddits = [
     'gadgetsmod',
     'modtalk',
     'defaultmods',
+    'gtavcustoms',
     'wsgy']
