@@ -23,4 +23,5 @@ subreddits = [
     '1911',
     'bottomlulz',
     'emobatman',
+    'guns',
     'wsgy']
