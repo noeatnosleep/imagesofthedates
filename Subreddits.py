@@ -21,4 +21,5 @@ subreddits = [
     'defaultmods',
     'gtavcustoms',
     '1911',
+    'bottomlulz',
     'wsgy']
