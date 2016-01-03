@@ -22,4 +22,5 @@ subreddits = [
     'gtavcustoms',
     '1911',
     'bottomlulz',
+    'emobatman',
     'wsgy']
