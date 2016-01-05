@@ -26,4 +26,5 @@ subreddits = [
     'emobatman',
     'guns',
     'jerktalkdiamond',
+    'pathofdiablo',
     'wsgy']
