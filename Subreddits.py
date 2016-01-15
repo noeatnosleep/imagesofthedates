@@ -13,6 +13,7 @@ subreddits = [
     'realsolarsystem',  
     'shittyadviceanimals',
     'imaginarymaps',
+    'ar15',
     'instahotties2',
     'eternityclub',
     'knowledgebombshell',
