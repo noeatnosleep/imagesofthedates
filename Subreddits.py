@@ -16,6 +16,7 @@ subreddits = [
     'ar15',
     'instahotties2',
     'eternityclub',
+    'airsoft',
     'knowledgebombshell',
     'politicsmod',
     'gadgetsmod',
