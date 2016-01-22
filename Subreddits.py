@@ -12,6 +12,7 @@ subreddits = [
     'kerbalspaceprogram',
     'realsolarsystem',  
     'shittyadviceanimals',
+    'lewronggeneration',
     'imaginarymaps',
     'ar15',
     'instahotties2',
