@@ -16,5 +16,6 @@ users = [
     'dank_skeletons',
     'thesemisoberone',
     'plainchant',
-    'letthereber0ck'
+    'letthereber0ck',
+    'slanderousu'
     ]
