@@ -13,5 +13,8 @@ users = [
     'doesnthatefatties',
     'puripurihakase',
     'justblue',
-    'Dank_Skeletons',
-    'thesemisoberone']
+    'dank_skeletons',
+    'thesemisoberone',
+    'plainchant',
+    'letthereber0ck'
+    ]
