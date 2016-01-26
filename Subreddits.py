@@ -14,6 +14,7 @@ subreddits = [
     'shittyadviceanimals',
     'lewronggeneration',
     'imaginarymaps',
+    'TaylorSwiftPictures',
     'ar15',
     'instahotties2',
     'eternityclub',
