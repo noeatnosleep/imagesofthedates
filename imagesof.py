@@ -278,7 +278,7 @@ def praw_oauth_login(r):
 
 def main():
     print("Logging in...")
-    r = praw.Reddit('ImagesOf v2.1 /u/amici_ursi, /u/captainmeta4, /u/noeatnosleep')
+    r = praw.Reddit('ImagesOf v2.2 /u/amici_ursi, /u/captainmeta4, /u/noeatnosleep', api_request_delay=1)
     
     praw_oauth_login(r)
 
