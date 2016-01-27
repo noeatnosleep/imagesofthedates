@@ -17,5 +17,6 @@ users = [
     'thesemisoberone',
     'plainchant',
     'letthereber0ck',
-    'slanderousu'
+    'slanderousu',
+    'corren_64'
     ]
