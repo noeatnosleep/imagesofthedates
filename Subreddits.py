@@ -23,6 +23,7 @@ subreddits = [
     'politicsmod',
     'gadgetsmod',
     'modtalk',
+    'cucksville',
     'defaultmods',
     'gtavcustoms',
     '1911',
