@@ -1,6 +1,7 @@
 # users blacklist. use lowercase.
 users = [
     'amici_ursi',
+    'captainnoboat',
     'crunchynutty',
     'iamseiko',
     'rpbot',
