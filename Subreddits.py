@@ -33,4 +33,5 @@ subreddits = [
     'transpassing',
     'wallpaper',
     'wallpapers',
-    'wsgy']
+    'wsgy'
+    ]
