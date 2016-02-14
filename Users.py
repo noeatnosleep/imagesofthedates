@@ -14,6 +14,8 @@ users = [
     'kritiosman',
     'kryso',
     'letthereber0ck',
+    'munkyduckylucky',
+    'pdmcmahon',
     'plainchant',
     'puripurihakase',
     'removalbot',
