@@ -2,9 +2,15 @@ import time
 import praw
 import os
 import re
-import Users
 import Subreddits
 import Domains
+
+
+r = praw.Reddit('ImagesOf v2.2 /u/amici_ursi, /u/captainmeta4, /u/noeatnosleep')
+
+print("Getting user blacklist")
+userblacklist_wiki = r.get_wiki_page("ImagesOfNetwork","userblacklist")
+userblacklist = set([name.strip().lower()[3:] for name in userblacklist_wiki.content_md.split("\n") if name.strip() != ""])
 
 
 def search_for_places(r):
@@ -18,7 +24,7 @@ def search_for_places(r):
                 continue
             if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
-            if str(submission.author).lower() in Users.users:
+            if str(submission.author).lower() in userblacklist:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
@@ -35,7 +41,7 @@ def search_for_places(r):
                 continue
             if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
-            if str(submission.author).lower() in Users.users:
+            if str(submission.author).lower() in userblacklist:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
@@ -52,7 +58,7 @@ def search_for_places(r):
                 continue
             if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
-            if str(submission.author).lower() in Users.users:
+            if str(submission.author).lower() in userblacklist:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
@@ -69,7 +75,7 @@ def search_for_places(r):
                 continue
             if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
-            if str(submission.author).lower() in Users.users:
+            if str(submission.author).lower() in userblacklist:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
@@ -86,7 +92,7 @@ def search_for_places(r):
                 continue
             if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
-            if str(submission.author).lower() in Users.users:
+            if str(submission.author).lower() in userblacklist:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
@@ -103,7 +109,7 @@ def search_for_places(r):
                 continue
             if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
-            if str(submission.author).lower() in Users.users:
+            if str(submission.author).lower() in userblacklist:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
@@ -121,7 +127,7 @@ def search_for_places(r):
  
             if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
-            if str(submission.author).lower() in Users.users:
+            if str(submission.author).lower() in userblacklist:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
@@ -138,7 +144,7 @@ def search_for_places(r):
                 continue
             if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
-            if str(submission.author).lower() in Users.users:
+            if str(submission.author).lower() in userblacklist:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
@@ -155,7 +161,7 @@ def search_for_places(r):
                 continue
             if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
-            if str(submission.author).lower() in Users.users:
+            if str(submission.author).lower() in userblacklist:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
@@ -172,7 +178,7 @@ def search_for_places(r):
                 continue
             if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
-            if str(submission.author).lower() in Users.users:
+            if str(submission.author).lower() in userblacklist:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
@@ -189,7 +195,7 @@ def search_for_places(r):
                 continue
             if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
-            if str(submission.author).lower() in Users.users:
+            if str(submission.author).lower() in userblacklist:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
@@ -206,7 +212,7 @@ def search_for_places(r):
                 continue
             if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
-            if str(submission.author).lower() in Users.users:
+            if str(submission.author).lower() in userblacklist:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
@@ -223,7 +229,7 @@ def search_for_places(r):
                 continue
             if str(submission.domain).lower().endswith(Domains.domains) == False:
                 continue
-            if str(submission.author).lower() in Users.users:
+            if str(submission.author).lower() in userblacklist:
                 continue
             if str(submission.subreddit).lower() in Subreddits.subreddits:
                 continue
@@ -278,7 +284,6 @@ def praw_oauth_login(r):
 
 def main():
     print("Logging in...")
-    r = praw.Reddit('ImagesOf v2.2 /u/amici_ursi, /u/captainmeta4, /u/noeatnosleep')
     
     praw_oauth_login(r)
 
