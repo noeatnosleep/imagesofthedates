@@ -33,6 +33,6 @@ subreddits = [
     'transpassing',
     'wallpaper',
     'wallpapers',
-    'CCW',
+    'ccw',
     'wsgy'
     ]
