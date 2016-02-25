@@ -22,6 +22,7 @@ users = [
     'removalbot_poster',
     'rpbot',
     'slanderousu',
+    'sneakygreninja',
     'thesemisoberone',
     'xfile345'
     ]
