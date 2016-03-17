@@ -243,7 +243,7 @@ def search_for_places(r):
 
 
 def make_post(r, originalsubmission, subreddit):
-    title = 'originalsubmission.title'
+    title = originalsubmission.title
     comment = '[Original post]({}) by /u/{} in /r/{} '.format(originalsubmission.permalink,
                                                     originalsubmission.author,
                                                     originalsubmission.subreddit)
