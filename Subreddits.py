@@ -1,5 +1,5 @@
 # Subreddit blacklist. use lowercase.
-subreddits = [
+subreddits = [x.lower() for x in [
     '1911',
     'airsoft',
     'ar15',
