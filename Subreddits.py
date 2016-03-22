@@ -5,6 +5,7 @@ subreddits = [
     'ar15',
     'bottomlulz',
     'circlejerk',
+    'cringeanarchy',
     'cucksville',
     'deepdreampics',
     'defaultmods',
