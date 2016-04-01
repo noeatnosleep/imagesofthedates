@@ -1,6 +1,7 @@
 # Subreddit blacklist. use lowercase.
 subreddits = [
     '1911',
+    'weekendgunnit',
     'eu4',
     'paradoxplaza',
     'airsoft',
