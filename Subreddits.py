@@ -8,6 +8,7 @@ subreddits = [
     'pcmasterrace',
     'ar15',
     'bottomlulz',
+    'thechosenfew',
     'circlejerk',
     'cringeanarchy',
     'cucksville',
