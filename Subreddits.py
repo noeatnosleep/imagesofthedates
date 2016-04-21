@@ -5,6 +5,7 @@ subreddits = [
     'eu4',
     'paradoxplaza',
     'airsoft',
+    'gaming',
     'pcmasterrace',
     'ar15',
     'bottomlulz',
