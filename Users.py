@@ -4,7 +4,6 @@ users = [
     'captainnoboat',
     'corren_64',
     'crunchynutty',
-    'crunchynutty2',
     'dank_skeletons',
     'doesnthatefatties',
     'evosexybeast',
