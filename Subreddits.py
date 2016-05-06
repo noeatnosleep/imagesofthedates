@@ -7,6 +7,7 @@ subreddits = [
     'airsoft',
     'gaming',
     'pcmasterrace',
+    'battlefield',
     'ar15',
     'bottomlulz',
     'thechosenfew',
