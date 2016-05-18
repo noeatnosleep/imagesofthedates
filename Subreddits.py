@@ -6,6 +6,7 @@ subreddits = [
     'paradoxplaza',
     'airsoft',
     'clashroyale',
+    'the1975',
     'gaming',
     'pcmasterrace',
     'battlefield',
