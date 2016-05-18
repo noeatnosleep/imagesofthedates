@@ -5,7 +5,7 @@ subreddits = [
     'eu4',
     'paradoxplaza',
     'airsoft',
-    'clashRoyale',
+    'clashroyale',
     'gaming',
     'pcmasterrace',
     'battlefield',
