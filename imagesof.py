@@ -280,7 +280,7 @@ def praw_oauth_login(r):
     
     print('...done')
 
-
+#do the thing
 def main():
     print("Logging in...")
     
