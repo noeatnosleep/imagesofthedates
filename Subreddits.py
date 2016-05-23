@@ -28,6 +28,7 @@ subreddits = [
     'gunporn',
     'guns',
     'imaginarymaps',
+    'imgur_all',
     'instahotties2',
     'jerktalkdiamond',
     'kerbalspaceprogram',
