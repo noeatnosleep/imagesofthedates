@@ -8,6 +8,7 @@ subreddits = [
     'clashroyale',
     'the1975',
     'gaming',
+    'basicallyadoctor',
     'pcmasterrace',
     'battlefield',
     'ar15',
