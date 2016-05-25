@@ -293,5 +293,5 @@ def main():
             print("Reddit is down. Sleeping...")
             time.sleep(360)
 
-if __name__ == '__main__':
-    main()
+#if __name__ == '__main__':
+#    main()
