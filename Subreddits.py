@@ -11,6 +11,7 @@ subreddits = [
     'basicallyadoctor',
     'pcmasterrace',
     'battlefield',
+    'Idubbbz',
     'ar15',
     'bottomlulz',
     'thechosenfew',
