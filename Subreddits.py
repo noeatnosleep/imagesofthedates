@@ -16,6 +16,7 @@ subreddits = [
     'thechosenfew',
     'circlejerk',
     'cringeanarchy',
+    'dankmemes',
     'cucksville',
     'deepdreampics',
     'defaultmods',
